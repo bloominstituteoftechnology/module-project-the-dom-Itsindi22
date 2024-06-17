@@ -82,7 +82,7 @@ describe('Sprint 5 Module', () => {
   describe('Task 4 - Countdown widget', () => {
     test('👉 [7] Counts from "T-minus 5..." to "Liftoff! 🚀"', () => {
       screen.getByText('Countdown')
-      screen.getByText('T-minus 5...')
+      screen .getByText('T-minus 5...')
       jest.advanceTimersByTime(1000)
       screen.getByText('T-minus 4...')
       jest.advanceTimersByTime(1000)
