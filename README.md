@@ -371,3 +371,4 @@ This file works in combination with the Eslint extension for VSCode to highlight
 Jest is a framework that allows you to write tests and execute them, to alert you very quickly of problems with the code. Jest can do in seconds what an entire Quality Assurance team would take hours or even days. In the context of the Sprint Challenge, Jest is used to check your code against specification and give you a grade (% of tests passing).
 
 </details>
+# Sprint-5-Module-1-project
