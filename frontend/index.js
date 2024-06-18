@@ -30,6 +30,7 @@ authorDate.textContent = ` ${author} in  ${date || " an unknown date"} `
 widget1.appendChild(authorDate)
 // Task 3 - Bulid a" Corporate Speak  widget "
 // add your code here 
+console.log(Math.floor(Math.random()* verbs.length))
 const randomVerb1 = verbs[Math.floor(Math.random()* verbs.length)]
 const randomVerb2 = verbs[Math.floor(Math.random()* verbs.length)]
   const randomAdverb1 = adverbs[Math.floor(Math.random() * adverbs.length)]
@@ -37,10 +38,10 @@ const randomAdverb2 = adverbs[Math.floor(Math.random() * adverbs.length)]
  const randomNoun1 = nouns [Math.floor(Math.random() * nouns.length)]
 const randomNoun2 = nouns [Math.floor(Math.random() * nouns.length)]
 
- const  mumboJumbo = `We need to ${randomVerb1} our ${randomNoun1} ${randomAdverb1} in order to ${randomVerb2} our ${randomNoun2}${randomAdverb2}.`
+ const  mumboJumbo = `We need to ${randomVerb1} our ${randomNoun1} ${randomAdverb1} in order to ${randomVerb2} our ${randomNoun2} ${randomAdverb2}.`
 const paragraph = document.createElement('p')
 paragraph.textContent = mumboJumbo
-document.querySelector('.corporatespeak').appendChild(paragraph)
+document.querySelector(' .corporatespeak').appendChild(paragraph)
 
  
 
@@ -72,7 +73,7 @@ let sentence = ` ${person.fname} ${person.lname} was  born in ${year} and `
 if (!person.friends.length)    {
       sentence += 'has no friends.'
   } else {
-    sentence += 'is friends with others'
+    sentence += 'is friends with '
     for (let idx = 0; idx < person.friends.length; idx++) {
       const friendId = person.friends[idx]
       const friend = people.find(p => p.id === friendId)
@@ -82,11 +83,10 @@ if (!person.friends.length)    {
       if (isLastIdx) {
         sentence += `${fullName}.`
       } else if (isNextToLastIdx) {
-     sentence += `${fullName} and`
+     sentence += `${fullName} and `
       } else {
-        sentence += ` ${fullName},`
-        
-      }
+        sentence += ` ${fullName}, `
+         }
     }
   }
 personParagraph.textContent = sentence 
